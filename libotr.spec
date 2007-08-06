@@ -1,8 +1,9 @@
-%define	version 3.0.0
-%define release %mkrel 2
+%define	version 3.1.0
+%define release %mkrel 1
 
 %define major 2
 %define libname %mklibname otr %{major}
+%define libnamedev %mklibname -d otr
 
 Summary:	Off-The-Record Messaging library and toolkit
 Name:		libotr
@@ -60,14 +61,15 @@ OTR allows you to have private conversations over IM by providing:
    - If you lose control of your private keys, no previous conversation
      is compromised.
 
-%package	-n %{libname}-devel
+%package	-n %{libnamedev}
 Summary:	Development related files of %{name}
 Group:		Networking/Instant messaging
 License:	LGPL
 Provides:	%{name}-devel = %{version}-%{release}
 Requires:	%{libname} = %{version}
+Obsoletes: %mklibname -d otr 2
 
-%description	-n %{libname}-devel
+%description	-n %{libnamedev}
 %{name} is a library and toolkit which implements Off-the-Record (OTR)
 Messaging. This package contains development related files of %{name}.
 
@@ -101,9 +103,9 @@ rm -rf %{buildroot}
 %files -n %{libname}
 %defattr(-,root,root)
 %doc AUTHORS
-%{_libdir}/lib*.so.*
+%{_libdir}/lib*.so.%{major}*
 
-%files -n %{libname}-devel
+%files -n %{libnamedev}
 %defattr(-,root,root)
 %doc ChangeLog INSTALL Protocol-v2.html NEWS README
 %{_datadir}/aclocal/*.m4
