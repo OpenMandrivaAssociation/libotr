@@ -14,6 +14,7 @@ Group:		Networking/Instant messaging
 URL:		http://www.cypherpunks.ca/otr/
 Source0:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz
 Source1:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz.asc
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	libgcrypt-devel >= 1.2.0
 
 %description
