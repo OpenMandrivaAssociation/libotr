@@ -1,5 +1,5 @@
-%define	version 3.1.0
-%define release %mkrel 2
+%define	version 3.2.0
+%define release %mkrel 1
 
 %define major 2
 %define libname %mklibname otr %{major}
@@ -117,6 +117,7 @@ rm -rf %{buildroot}
 %{_libdir}/lib*.so
 %{_libdir}/lib*.a
 %{_libdir}/lib*.la
+%{_libdir}/pkgconfig/*.pc
 
 %files utils
 %defattr(-,root,root)
