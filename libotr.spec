@@ -1,5 +1,5 @@
 %define	version 3.2.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define major 2
 %define libname %mklibname otr %{major}
