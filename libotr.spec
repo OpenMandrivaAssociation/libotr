@@ -5,7 +5,7 @@
 Summary:	Off-The-Record Messaging library and toolkit
 Name:		libotr
 Version:	4.0.0
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Networking/Instant messaging
 Url:		http://www.cypherpunks.ca/otr/
