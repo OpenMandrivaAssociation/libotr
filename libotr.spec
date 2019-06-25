@@ -4,7 +4,7 @@
 
 Summary:	Off-The-Record Messaging library and toolkit
 Name:		libotr
-Version:	4.0.0
+Version:	4.1.1
 Release:	9
 License:	GPLv2+
 Group:		Networking/Instant messaging
