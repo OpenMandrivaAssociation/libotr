@@ -8,7 +8,7 @@ Version:	4.1.1
 Release:	10
 License:	GPLv2+
 Group:		Networking/Instant messaging
-Url:		http://www.cypherpunks.ca/otr/
+Url:		https://www.cypherpunks.ca/otr/
 Source0:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz
 Source1:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz.asc
 BuildRequires:	pkgconfig(libgcrypt)
