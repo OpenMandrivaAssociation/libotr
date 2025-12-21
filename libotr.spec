@@ -11,6 +11,11 @@ Group:		Networking/Instant messaging
 Url:		https://www.cypherpunks.ca/otr/
 Source0:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz
 Source1:	http://www.cypherpunks.ca/otr/%{name}-%{version}.tar.gz.asc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libgcrypt)
 
 %description
